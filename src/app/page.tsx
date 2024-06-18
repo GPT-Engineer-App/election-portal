@@ -15,6 +15,7 @@ export default function Home() {
       <link rel="stylesheet" href="/assets/fonts" />
       <link rel="stylesheet" href="/assets/images" />
       <link rel="stylesheet" href="/assets/manifest.json" />
+      <link rel="stylesheet" href="node_modules/govuk-frontend/dist/govuk/all.css" />
       <header className="govuk-header" role="banner" data-module="govuk-header">
         <div className="govuk-header__container govuk-width-container">
           <div className="govuk-header__logo">
