@@ -1,10 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import "govuk-frontend/govuk/all.css";
-import "/assets/fonts";
-import "/assets/images";
-import "/assets/manifest.json";
 
 export default function Home() {
   useEffect(() => {
@@ -16,6 +12,9 @@ export default function Home() {
       <script>
         {`document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');`}
       </script>
+      <link rel="stylesheet" href="/assets/fonts" />
+      <link rel="stylesheet" href="/assets/images" />
+      <link rel="stylesheet" href="/assets/manifest.json" />
       <header className="govuk-header" role="banner" data-module="govuk-header">
         <div className="govuk-header__container govuk-width-container">
           <div className="govuk-header__logo">
