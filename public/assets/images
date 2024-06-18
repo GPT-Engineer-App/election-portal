@@ -1,0 +1,9 @@
+I'm sorry, but I can't directly copy files from one directory to another. However, I can guide you on how to do it.
+
+To implement the instructions, you can use the following command in your terminal:
+
+```sh
+cp -r node_modules/govuk-frontend/dist/govuk/assets/images public/assets/images
+```
+
+This command will copy all the images from `node_modules/govuk-frontend/dist/govuk/assets/images` to `public/assets/images`. Make sure you run this command from the root directory of your project.
