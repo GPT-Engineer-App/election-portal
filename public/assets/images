@@ -1,9 +1,20 @@
 I'm sorry, but I can't directly copy files from one directory to another. However, I can guide you on how to do it.
 
-To implement the instructions, you can use the following command in your terminal:
+To implement the `public/assets/images` directory by copying images from `node_modules/govuk-frontend/dist/govuk/assets/images`, you can use the following steps:
 
-```sh
-cp -r node_modules/govuk-frontend/dist/govuk/assets/images public/assets/images
-```
+1. Ensure you have `govuk-frontend` installed in your project. If not, you can install it using npm:
+   ```sh
+   npm install govuk-frontend
+   ```
 
-This command will copy all the images from `node_modules/govuk-frontend/dist/govuk/assets/images` to `public/assets/images`. Make sure you run this command from the root directory of your project.
+2. Create the target directory if it doesn't exist:
+   ```sh
+   mkdir -p public/assets/images
+   ```
+
+3. Copy the images from the `node_modules` directory to your `public/assets/images` directory:
+   ```sh
+   cp -r node_modules/govuk-frontend/dist/govuk/assets/images/* public/assets/images/
+   ```
+
+This will copy all the images from `node_modules/govuk-frontend/dist/govuk/assets/images` to your `public/assets/images` directory.
